@@ -9,6 +9,8 @@ funkje
 
 
 
+
+
 ```r
 library(data.table)
 library(ggplot2)
@@ -41,7 +43,7 @@ ggp <- ggplot(data = dailyTotal, aes(x = stepsSum)) +
 print(ggp)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](Figures/unnamed-chunk-5-1.png) 
 
 Now lets calculate the mean total number of steps taken per day:
 
@@ -75,7 +77,7 @@ ggp <- ggplot(data = dailyAverage, aes(x = interval, y = stepsAverage)) +
 print(ggp)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+![](Figures/unnamed-chunk-9-1.png) 
 
 To figure out which interval contains on average the highest number of steps, lets run:
 
@@ -114,7 +116,7 @@ ggp <- ggplot(data = dailyTotalI, aes(x = stepsSum)) +
 print(ggp)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
+![](Figures/unnamed-chunk-13-1.png) 
 
 Now lets calculate the mean total number of steps taken per day for the imputed data:
 
@@ -158,4 +160,4 @@ ggp <- ggplot(data = dailyAverageI, aes(x = interval, y = stepsAverage)) +
 print(ggp)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-18-1.png) 
+![](Figures/unnamed-chunk-18-1.png) 

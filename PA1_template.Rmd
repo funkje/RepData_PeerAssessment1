@@ -2,15 +2,19 @@
 title: 'Reproducible Research: Peer Assessment 1'
 author: "funkje"
 output:
-  pdf_document: default
   html_document:
     keep_md: yes
+  pdf_document: default
 ---
 
 ## Loading libraries
 
 * Data.table is my weapon of choice for manipulating data frames because of its speed and functionality.
 * Ggplot2 lets me quickly prodcue nice graphs.
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figures/')
+```
 
 ```{r include=FALSE}
 options(scipen = 1, digits = 2) # display 2 decimal numbers for the sake of the report
